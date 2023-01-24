@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "express": "4.18.2",
+    "redis": "4.5.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build:img": "docker-compose up"
+  }
+}
