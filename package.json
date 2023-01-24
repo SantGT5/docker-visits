@@ -5,6 +5,8 @@
   },
   "scripts": {
     "start": "node index.js",
-    "build:img": "docker-compose up"
+    "build:img": "docker-compose up --build",
+    "start:container": "docker-compose up -d",
+    "stop:container": "docker-compose down"
   }
 }

@@ -1,9 +1,10 @@
-import express from "express";
-import { createClient } from "redis";
+const express = require("express");
+const redis = require("redis");
 
+const process = require('process')
 const app = express();
 
-const client = createClient({
+const client = redis.createClient({
   url: "redis://default:default@redis-server:6379",
 });
 
